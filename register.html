@@ -10,22 +10,24 @@
   	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
 
-<body background="">
+<body>
 <center><p style="font-size: 32px; margin-top: 20px; margin-bottom: 15px; font: robot">Registrasi Data Lamaran Kerja</p></center>
 
 
 <div class="container" style="width: 550px">
   <form action="/action_page.php" class="needs-validation" novalidate>
     <div class="form-group">
-      <label for="usr">Nama Lengkap</label>
-      <input type="text" class="form-control" id="usr" name="username" required>
+      <label for="nalem">Nama Lengkap</label>
+      <input type="text" class="form-control" id="nalem" name="namalengkap" required>
       <div class="invalid-feedback">Wajib Untuk diisi!</div>
     </div>
      <div class="form-group">
       <label for="jk">Jenis Kelamin</label>
-      <select class="form-control" id="jk" name="jeniskelamin">
+      <select class="form-control" id="jk" name="jeniskelamin" required>
+      	<option selected hidden="" value="">Pilih Jenis Kelamin</option>
       	<option value="L">Laki-laki</option>
       	<option value="P">Perempuan</option>
+ 		<div class="invalid-feedback">Wajib Untuk diisi!</div>     
       </select>
     </div>
     <div class="form-group">
@@ -44,24 +46,26 @@
       <div class="invalid-feedback">Wajib Untuk diisi!</div>
     </div>
     <div class="form-group">
-      <label for="pwd">Jenjang Pendidikan Terakhir</label>
-      <select class="form-control" id="jk" name="jeniskelamin">
-      	<option selected="">SD</option>
+      <label for="jpt">Jenjang Pendidikan Terakhir</label>
+      <select class="form-control" id="jpt" name="jenjangpendidikanterakhir" required>
+      	<option selected hidden="" value="">Pilih Jenjang pendidkan</option>
+      	<option value="sd">SD</option>
       	<option value="smp">SMP Sederajat</option>
       	<option value="sma">SMA Sederajat</option>
       	<option value="sarjana">Sarjana</option>
       	<option value="magister">Magister</option>
       	<option value="doktor">Doktor</option>
       </select>
-    </div>
-    <div class="form-group">
-      <label for="pwd">Jelaskan Keahlian Anda</label><br>
-      <textarea rows="5" class="form-control" required=""></textarea>
       <div class="invalid-feedback">Wajib Untuk diisi!</div>
     </div>
     <div class="form-group">
-      <label for="pwd">Berapa Gaji Yang Anda Butuhkan?</label><br>
-      <input type="number" name="" class="form-control" required>
+      <label for="keahl">Jelaskan Keahlian Anda</label><br>
+      <textarea rows="5" class="form-control" required="" id="keahl" name="keahlian"></textarea>
+      <div class="invalid-feedback">Wajib Untuk diisi!</div>
+    </div>
+    <div class="form-group">
+      <label for="gj">Berapa Gaji Yang Anda Butuhkan?</label><br>
+      <input type="number" name="" class="form-control" required id="gj" name="gaji">
       <div class="invalid-feedback">Wajib Untuk diisi!</div>
     </div>
 
