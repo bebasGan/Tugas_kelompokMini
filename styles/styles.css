@@ -1,0 +1,32 @@
+body {
+    background-image: url("background.jpg");
+    background-size: cover;
+}
+
+body, p, div {
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: -0.2px;
+    font-size: large;
+}
+
+div, p {
+    color: #BABECC;
+    text-shadow: 1px 1px 1px #FFF;
+}
+
+
+div {
+    box-shadow:  inset 1px 1px 2px #BABECC, inset -1px -1px 2px #FFF;
+    padding: 16px;
+    width: 16px*20;
+    margin: 0 auto;
+}
+
+.btn {
+        color:#FFF;
+        font-weight: bold;
+        box-shadow: -5px -5px 20px #FFF,  5px 5px 20px #BABECC;
+        transition: all 0.2s ease-in-out;
+        cursor: pointer;
+        font-weight: 600;
+}
